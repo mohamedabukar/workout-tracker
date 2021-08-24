@@ -1,7 +1,6 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-const routes = require("./routes/html");
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
 
